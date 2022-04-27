@@ -1,0 +1,13 @@
+.ll-year {
+  vertical-align: top;
+  width: 20%;
+}
+
+.ll-row {
+  border-spacing: 5em;
+}
+
+.ll-table {
+  border-collapse: separate;
+  border-spacing: 0 15px;
+}

@@ -1,0 +1,20 @@
+{
+    "pages":[
+        {
+            "id": "intro",
+            "order": 1,
+            "title": "Einleitung",
+            "layoutFile": "./pdf_layout/bewerbung/layout_einleitung.json",
+            "format": "A4",
+            "orientation": "P"
+        },
+        {
+            "id": "profile",
+            "order": 2,
+            "title": "Profil",
+            "layoutFile": "./pdf_layout/bewerbung/layout_profil.json",
+            "format": "A4",
+            "orientation": "P"
+        }
+    ]
+}

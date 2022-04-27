@@ -1,0 +1,238 @@
+{
+    "elements":[
+        {
+            "type": "rect",
+            "lineWidth": 1,
+            "lineColor": "0,0,0",
+            "fillColor": "80,100,150",
+            "style": "F",
+            "x": 0,
+            "y": 20,
+            "width": 210,
+            "height": 20
+        },
+        {
+            "type": "line",
+            "lineWidth": 0.5,
+            "lineColor": "80,100,150",
+            "style": "F",
+            "x": 0,
+            "y": 260,
+            "x2": 210,
+            "y2": 260
+        },
+        {
+            "type": "rect",
+            "lineWidth": 1,
+            "lineColor": "0,0,0",
+            "fillColor": "186,210,240",
+            "style": "F",
+            "x": 0,
+            "y": 41,
+            "width": 210,
+            "height": 10
+        },
+        {
+            "type": "rect",
+            "lineWidth": 1,
+            "lineColor": "0,0,0",
+            "fillColor": "255,255,255",
+            "style": "F",
+            "x": 149,
+            "y": 15,
+            "width": 32,
+            "height": 80
+        },
+        {
+            "type": "image",
+            "file": "./assets/images/profile.jpg",
+            "x": 150,
+            "y": 15,
+            "width": 30,
+            "height": 0
+        },
+        {
+            "type": "text",
+            "textColor": "250,250,250",
+            "fontSize": 30,
+            "dataProvider": "PortfolioProfile",
+            "dataProviderAttributes": ["fullname"],
+            "data": "Vorname Nachname",
+            "x": 20,
+            "y": 31
+        },
+        {
+            "type": "text",
+            "textColor": "250,250,250",
+            "fontSize": 12,
+            "dataProvider": "PortfolioProfile",
+            "dataProviderAttributes": ["address"],
+            "data": "address",
+            "x": 20,
+            "y": 37.5
+        },
+        {
+            "type": "text",
+            "textColor": "80,100,150",
+            "fontSize": 22,
+            "dataProvider": "",
+            "dataProviderAttributes": [""],
+            "data": "Lebenslauf",
+            "x": 20,
+            "y": 49,
+            "width": 120,
+            "height": 8
+        },
+        {
+            "type": "labeledText",
+            "direction": "horizontal",
+            "textColor": "80,100,150",
+            "fontSize": 10,
+            "labels": ["Telefon", "E-Mail", "Threema ID"],
+            "dataProvider": "PortfolioProfile",
+            "dataProviderAttributes": ["phone","mail","threemaID"],
+            "x": 20,
+            "y": 270
+        },
+        {
+            "type": "timeline",
+            "textColor": "80,100,150",
+            "fontSize": 10,
+            "labels": ["Telefon", "E-Mail", "Threema ID"],
+            "dataProvider": "PortfolioTimeline",
+            "dataProviderAttributes": 
+                {
+                    "branche":"lebenslauf",
+                    "sortby":"start"
+                }
+            ,
+            "x": 20,
+            "y": 110
+        },
+        {
+            "type": "keyvalue",
+            "textColor": "80,100,150",
+            "labelColor": "100,140,200",
+            "fontSize": 10,
+            "labels": ["Name", "Position", "Adresse", "Telefon", "E-Mail", "Geburtsdatum", "Geburtsort", "Staatsangehörigkeit","Familienstand"],
+            "dataProvider": "PortfolioProfile",
+            "dataProviderAttributes": ["fullname","workTitle","address", "phone", "mail", "born","born-in", "nationality","civil_status"],
+            "x": 20,
+            "y": 55
+        },
+        {
+            "type": "line",
+            "lineWidth": 0,
+            "lineColor": "100,140,200",
+            "style": "F",
+            "x": 20,
+            "y": 105,
+            "x2": 210,
+            "y2": 105
+        }
+        ,
+        {
+            "type": "line",
+            "lineWidth": 0,
+            "lineColor": "100,140,200",
+            "style": "F",
+            "x": 140,
+            "y": 105,
+            "x2": 140,
+            "y2": 255
+        },
+        {
+            "type": "text",
+            "textColor": "100,140,200",
+            "fontSize": 12,
+            "dataProvider": "Skills",
+            "dataProviderAttributes": {
+                "get": "title",
+                "show": "soft"
+            },
+            "data": "Intro text2",
+            "x": 145,
+            "y": 115,
+            "width": 50,
+            "height": 5
+        }
+        ,
+        {
+            "type": "multiline",
+            "textColor": "80,100,150",
+            "fontSize": 10,
+            "dataProvider": "Skills",
+            "dataProviderAttributes": {
+                "get": "list",
+                "show": "soft"
+            },
+            "separator":"\n",
+            "data": "Intro text2",
+            "x": 145,
+            "y": 118,
+            "width": 60,
+            "height": 5
+        },
+        {
+            "type": "text",
+            "textColor": "100,140,200",
+            "fontSize": 12,
+            "dataProvider": "Skills",
+            "dataProviderAttributes": {
+                "get": "title",
+                "show": "programming"
+            },
+            "data": "Intro text2",
+            "x": 145,
+            "y": 165,
+            "width": 50,
+            "height": 5
+        }
+        ,
+        {
+            "type": "multiline",
+            "textColor": "80,100,150",
+            "fontSize": 10,
+            "dataProvider": "Skills",
+            "dataProviderAttributes": {
+                "get": "list",
+                "show": "programming"
+            },
+            "separator":"\n",
+            "data": "Intro text2",
+            "x": 145,
+            "y": 168,
+            "width": 60,
+            "height": 5
+        },
+        {
+            "type": "text",
+            "textColor": "100,140,200",
+            "fontSize": 12,
+            "dataProvider": "",
+            "dataProviderAttributes": {
+            },
+            "data": "Software Tools",
+            "x": 145,
+            "y": 195,
+            "width": 50,
+            "height": 5
+        }
+        ,
+        {
+            "type": "multiline",
+            "textColor": "80,100,150",
+            "fontSize": 10,
+            "dataProvider": "Software",
+            "dataProviderAttributes": {
+                "status": "active"
+            },
+            "separator":", ",
+            "data": "Intro text2",
+            "x": 145,
+            "y": 198,
+            "width": 55,
+            "height": 5
+        }
+    ]
+}

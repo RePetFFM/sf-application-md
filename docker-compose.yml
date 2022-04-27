@@ -1,0 +1,15 @@
+version: "3"
+
+services:
+
+  apache-app:
+    image: webdevops/php-apache-dev:7.4
+    environment:
+      - WEB_DOCUMENT_ROOT=/app/htdocs
+    ports:
+      - '80:80'
+      - '443:443'
+    volumes:
+      - ./src/app:/app
+      - ./docker/apache/certs:/opt/docker/etc/httpd/ssl
+
